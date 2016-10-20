@@ -1,0 +1,12 @@
+.order-footer{
+  width: 90%;
+  margin:2rem auto 0 auto;
+  padding-left: 2.5rem;
+  @include box-sizing(border-box);
+  background: url(img/checkbox.png) no-repeat 0 0.2rem;
+  background-size: 1.5rem;
+}
+.no-checked{
+  background: url(img/noChecked.png) no-repeat 0 0.2rem;
+  background-size: 1.5rem;
+}

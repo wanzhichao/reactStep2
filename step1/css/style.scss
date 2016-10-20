@@ -1,0 +1,12 @@
+@charset "UTF-8";
+@import //base库
+"common/_rem",
+"common/_variable",
+"common/_css3lib",
+"common/_animation",
+"common/_common",
+    //组件
+
+"components/_order",
+"components/_loading",
+"components/_label";

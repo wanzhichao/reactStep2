@@ -1,0 +1,17 @@
+.loading{
+  width:6.5rem;
+  height: 6.5rem;
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 2px;
+
+  .loading-img{
+    width:4.4rem;
+    height: 4.4rem;
+    @include animation(rotate 2s linear infinite);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -2.2rem;
+    margin-top: -2.2rem;
+  }
+}

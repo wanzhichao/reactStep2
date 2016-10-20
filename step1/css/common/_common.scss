@@ -1,0 +1,42 @@
+body{background: $bg-gray;width:100%;height: 100%;}
+img{display: block;}
+.main-wrap { max-width: 750px; margin: 0 auto; position: relative;height: 100%; width: 100%;}
+//border
+.border-b{@include jm-border-b(1px, $border-gray);}
+.bg-white{background-color: $white;}
+.bg-blue{background-color: $bg-blue;}
+.bg-cc{background-color: $bg-cc;}
+//color
+.white { color: $white; }
+.bg-white { background-color: $white; }
+.orange { color: $orange; }
+.bg-orange { background-color: $orange; }
+.blue { color: $blue; }
+.bg-blue { background-color: $blue; }
+.light-black { color: $light-black; }
+//text-color
+.text-red { color: $text-red }
+.text-gray { color: $text-gray }
+.text-light-gray { color: $text-light-gray }
+.text-blue{color:$bg-blue;}
+//tools
+.box { @include flexBox }
+.box-item { @include flexItem(1) }
+.size10r { font-size: 1rem }
+.size12r { font-size: 1.2rem }
+.size14r { font-size: 1.4rem }
+.size16r { font-size: 1.6rem }
+.size18r { font-size: 1.8rem }
+.size20r { font-size: 2.0rem }
+.size22r { font-size: 2.2rem }
+.size24r { font-size: 2.4rem }
+.size26r { font-size: 2.6rem }
+.size28r { font-size: 2.8rem }
+.size30r { font-size: 3.0rem }
+.size32r { font-size: 3.2rem }
+
+.mt9r{ margin-top: 0.9rem; }
+.mt80r{ margin-top: 8rem; }
+//components
+.pro-tips { text-align: center; height: 4.7rem; color: $text-gray; font-size: 1rem; line-height: 4rem; }
+.dn{display: none;}
