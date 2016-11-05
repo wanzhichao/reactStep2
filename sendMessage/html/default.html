@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>京东金融</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="//www.jd.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//static.360buyimg.com/finance/mobile/base/cm/1.0.0/reset.css"/>
+    <link rel="stylesheet" href="../css/common.rem10.css">
+    <link rel="stylesheet" href="../css/sendMessage.rem10.css">
+</head>
+<body>
+<div class="wrapper">
+ <div class="send" style="width: 50px;height: 50px;background: #000;color:#fff;"> Click</div>
+</div>
+<div class="abs-mm" id="loading" style="width: 50px;height: 50px;background: red;display: none;"></div>
+<script src="//static.360buyimg.com/finance/mobile/base/1.0.0/js/lib/??zepto-1.1.4.js,fastclick.js"></script>
+<script src="../js/sendMessage.js"></script>
+<script src="//m.jr.jd.com/statics/bridgev6.min.js"></script>
+<script src="//static.360buyimg.com/finance/mobile/base/jm/js/??dist/userDetective/1.2.0/userDetective.js,lib/clickCount.js"></script>
+<script>
+;(function() {
+    var $loading = $('#loading');
+    //初始化弹框
+    var msgDialog = new window.jm.com.SendMessage(
+            {
+                titleTxt: "支付2000元",
+                count: 120,
+                contHeadTxt: "输入手机尾号8967接收的验证码",
+                reSendFn: function() {
+                    //一般ajax请求重新发送短信-----以下为模拟请求
+                    /* $.ajax({
+                     url: "../../data/sendMsg.json",
+                     type: "get",
+                     dataType: "json",
+                     success: function(data) {
+                     console.log(data)
+                     }
+                     })*/
+                    console.log("重新发送")
+                },
+                confirmFn: function(val) {
+                    //点击确认发送的回调函数-----以下为模拟请求
+                    /*$.ajax({
+                     url: "../../data/sendMsg.json",
+                     type: "get",
+                     dataType: "json",
+                     data: {val: val},
+                     success: function(data) {
+                     console.log(data)
+                     }
+                     })*/
+                    console.log(val)
+                }
+            }
+    );
+    $('.send').click(function() {
+        /*$loading.show()     //显示请求loading
+         $.ajax({
+         url: "../../data/sendMsg.json",
+         type: "get",
+         dataType: "json",
+         success: function(data) {
+         $loading.hide() //隐藏请求loading
+         if(data.code == "200" ) {
+         $loading.hide()
+         msgDialog.show();
+         }
+         },
+         error: function() {
+         $loading.hide();
+         }
+         })*/
+        msgDialog.show();
+    })
+}())
+
+</script>
+</body>
+</html>

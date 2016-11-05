@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/**
+ * css3lib\
+ *
+ * thanks: 
+ * http://bourbon.io/
+ * https://github.com/thomas-mcdonald/bootstrap-sass/blob/master/vendor/assets/stylesheets/bootstrap/_mixins.scss
+ * https://github.com/marvin1023/sassCore/blob/master/core/_css3.scss
+ */
+/* 两端对齐 */
+/* 居容器中间 */
+/* 三角箭头 */
+/**
+ * css3lib extend
+ *
+ * Created By McChen
+ *
+ * 2015/10/18
+ *
+ * chenjiahao@jd.com
+ */
+/* 1px hack */
+/*border-radius*/
+/*fullLayer*/
+/*nowrap*/
+/* 元素水平垂直居中 */
+/* 元素水平居左垂直居中 */
+/* 元素水平居右垂直居中 */
+/*placeholder-img*/
+/*strip-units 去除值得单位*/
+/*remCalc*/
+/**================================================================
+
+=================================================================*/
+.jm-alert {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none; }
+  .jm-alert .alert-box {
+    width: 28rem;
+    background-color: #fff;
+    height: 23rem;
+    border-radius: 2px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -14rem;
+    margin-top: -11.5rem;
+    font-size: 1.8rem; }
+    .jm-alert .alert-box .alert-title {
+      height: 5rem;
+      line-height: 5rem;
+      color: #333;
+      text-align: center;
+      border-bottom: 1px solid #ddd; }
+      @media screen and (-webkit-min-device-pixel-ratio: 2) {
+        .jm-alert .alert-box .alert-title {
+          border: 0;
+          background-position: left bottom;
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.6, transparent), color-stop(0.6, #ddd), to(#ddd));
+          background-repeat: repeat-x;
+          -webkit-background-size: 100% 1px; } }
+    .jm-alert .alert-box .alert-cont {
+      height: 13rem;
+      font-size: 1.6rem;
+      border-bottom: 1px solid #ddd; }
+      @media screen and (-webkit-min-device-pixel-ratio: 2) {
+        .jm-alert .alert-box .alert-cont {
+          border: 0;
+          background-position: left bottom;
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.6, transparent), color-stop(0.6, #ddd), to(#ddd));
+          background-repeat: repeat-x;
+          -webkit-background-size: 100% 1px; } }
+      .jm-alert .alert-box .alert-cont .cont-txt {
+        padding: 2rem 0 1rem 1.2rem;
+        line-height: 1.2;
+        font-size: 1.4rem;
+        color: #666; }
+      .jm-alert .alert-box .alert-cont .txt-care {
+        color: #f23030; }
+      .jm-alert .alert-box .alert-cont .input-box {
+        padding: 0 1.2rem;
+        height: 6rem;
+        display: box;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        display: -webkit-flex; }
+        .jm-alert .alert-box .alert-cont .input-box .msg-input {
+          position: relative;
+          width: 60%;
+          padding-left: 0.2rem;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          box-sizing: border-box;
+          border-radius: 2px;
+          border: 1px solid #ddd; }
+          @media screen and (-webkit-min-device-pixel-ratio: 2) {
+            .jm-alert .alert-box .alert-cont .input-box .msg-input {
+              position: relative;
+              border: 0; } }
+          @media screen and (-webkit-min-device-pixel-ratio: 2) {
+            .jm-alert .alert-box .alert-cont .input-box .msg-input:after {
+              content: "";
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.6, transparent), color-stop(0.6, #ddd), to(#ddd)), -webkit-gradient(linear, left top, right top, color-stop(0.6, transparent), color-stop(0.6, #ddd), to(#ddd)), -webkit-gradient(linear, left top, left bottom, color-stop(0.6, transparent), color-stop(0.6, #ddd), to(#ddd)), -webkit-gradient(linear, right top, left top, color-stop(0.6, transparent), color-stop(0.6, #ddd), to(#ddd));
+              -webkit-background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+              background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+              background-repeat: no-repeat;
+              background-position: top, right, bottom, left;
+              padding: 1px;
+              -webkit-box-sizing: border-box;
+              pointer-events: none; } }
+          .jm-alert .alert-box .alert-cont .input-box .msg-input input {
+            padding: 2rem 0;
+            width: 90%;
+            margin-left: 1.2rem;
+            line-height: 1.2; }
+        .jm-alert .alert-box .alert-cont .input-box .send-btn {
+          margin-left: 0.2rem;
+          line-height: 6rem;
+          background-color: #EFEFF4;
+          box-flex: 1;
+          -webkit-box-flex: 1;
+          -webkit-flex: 1;
+          -ms-flex: 1;
+          flex: 1;
+          width: 0;
+          text-align: center;
+          border: 1px solid #ddd;
+          border-radius: 2px; }
+          @media screen and (-webkit-min-device-pixel-ratio: 2) {
+            .jm-alert .alert-box .alert-cont .input-box .send-btn {
+              position: relative;
+              border: 0; } }
+          @media screen and (-webkit-min-device-pixel-ratio: 2) {
+            .jm-alert .alert-box .alert-cont .input-box .send-btn:after {
+              content: "";
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.6, transparent), color-stop(0.6, #ddd), to(#ddd)), -webkit-gradient(linear, left top, right top, color-stop(0.6, transparent), color-stop(0.6, #ddd), to(#ddd)), -webkit-gradient(linear, left top, left bottom, color-stop(0.6, transparent), color-stop(0.6, #ddd), to(#ddd)), -webkit-gradient(linear, right top, left top, color-stop(0.6, transparent), color-stop(0.6, #ddd), to(#ddd));
+              -webkit-background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+              background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+              background-repeat: no-repeat;
+              background-position: top, right, bottom, left;
+              padding: 1px;
+              -webkit-box-sizing: border-box;
+              pointer-events: none; } }
+        .jm-alert .alert-box .alert-cont .input-box .can-click {
+          background: #fff; }
+    .jm-alert .alert-box .btn-box {
+      height: 5rem;
+      line-height: 5rem;
+      display: box;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      display: -webkit-flex;
+      color: #ccc; }
+      .jm-alert .alert-box .btn-box .alert-btn {
+        text-align: center;
+        box-flex: 1;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        width: 0; }
+      .jm-alert .alert-box .btn-box .btn-can-click {
+        color: #508CEE; }
