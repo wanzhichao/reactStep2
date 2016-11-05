@@ -1,7 +1,6 @@
 /**
  * @Author: Created by wanzhichao on 2016/10/26.
  * vision:1.0
- * @Mail: wanzhichao@jd.com
  */
 
 /**================================================================
