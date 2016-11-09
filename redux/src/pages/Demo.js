@@ -11,13 +11,16 @@ class Demo extends  Component{
        const {dispatch, myData} = this.props;
         return <div>
             <div className="nav flexbox size16 ta-c">
-                <div className="nav-box flexbox-item" onClick = {() => dispatch(updateData(UPDATE_TYPE.READY))}>
+                <div className="nav-box flexbox-item"
+                     onClick = {() => dispatch(updateData(UPDATE_TYPE.READY))}>
                     <p className="nav-item">未开始</p>
                 </div>
-                <div className="nav-box flexbox-item"  onClick = {() => dispatch(updateData(UPDATE_TYPE.RUNNING))}/*{() => dispatch(deleteData({id:1}))}*/>
+                <div className="nav-box flexbox-item"
+                     onClick = {() => dispatch(updateData(UPDATE_TYPE.RUNNING))}>
                     <p className="nav-item">运行中</p>
                 </div>
-                <div className="nav-box flexbox-item"  onClick = {() => dispatch(updateData(UPDATE_TYPE.COMPLETED))}>
+                <div className="nav-box flexbox-item"
+                     onClick = {() => dispatch(updateData(UPDATE_TYPE.COMPLETED))}>
                     <p className="nav-item">已完成</p>
                 </div>
             </div>

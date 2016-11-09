@@ -22,6 +22,7 @@ export function updateData(text) {
 
     return (dispatch)=>
 {       //加载数据
+    console.log(dispatch);
         fetch('../../data/data.json')
             .then(response => response.json())
             .then(json => dispatch(loadAfter(text,json))
