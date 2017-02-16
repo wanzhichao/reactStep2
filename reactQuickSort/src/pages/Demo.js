@@ -6,8 +6,8 @@ import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 import SortInput from '../components/SortInput/SortInput';
 import {sortArr} from '../actions/demoAction';
-import '../../css/pages/demo.scss'
 import commonFuns from '../utils/CommonFuns'
+import '../../css/pages/demo.scss'
 class Demo extends  Component{
     clickSort = (val) => {
         const { dispatch } = this.props
