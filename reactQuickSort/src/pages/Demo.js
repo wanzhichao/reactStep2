@@ -12,6 +12,7 @@ class Demo extends  Component{
     clickSort = (val) => {
         const { dispatch } = this.props
         let resultArr = commonFuns.checkArray(val)
+
         if(resultArr){
             dispatch(sortArr(resultArr))
         }
