@@ -12,7 +12,6 @@ class Demo extends  Component{
     clickSort = (val) => {
         const { dispatch } = this.props
         let resultArr = commonFuns.checkArray(val)
-
         if(resultArr){
             dispatch(sortArr(resultArr))
         }
@@ -21,7 +20,7 @@ class Demo extends  Component{
         return commonFuns.checkArray(val) ? true: false
     }
     render() {
-        return <div>
+        return <div className="plr15">
             <p className="demo-title ta-c size30">来这里进行快速排序哦~</p>
             <div className="mt20">
                 <SortInput placeTxt="请输入数组格式数据，如:1,4,3,2,5" btnTxt="进行排序" errorTxt="抱歉，数据格式校验不正确"

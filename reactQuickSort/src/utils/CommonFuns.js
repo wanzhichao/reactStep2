@@ -13,7 +13,7 @@ const checkArray = (inputStr) => {
     tempArr.forEach(function(item,i){
         let itemVal = parseFloat(item.trim())
         //console.log(isNaN(itemVal))
-        if(!isNaN(item)){
+        if(!isNaN(item) && !isNaN(itemVal)){
             resultArr[i] = itemVal
         }else{
             isArr = false
