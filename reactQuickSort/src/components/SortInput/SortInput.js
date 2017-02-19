@@ -44,7 +44,7 @@ export default class SortInput extends Component{
     render() {
         const {placeTxt, btnTxt, errorTxt} = this.props
         return <div className="sort-box">
-            <input type="text" ref="myInput" className="abs-lm sort-input" onInput={this.inputHandler} placeholder={placeTxt}/>
+            <input type="text" ref="myInput" className="sort-input" onInput={this.inputHandler} placeholder={placeTxt}/>
             <p className="abs-rm sort-btn" onClick={this.clickHandler}>{btnTxt}</p>
             <p className="sort-error">{this.state.showError ?　errorTxt : ''}</p>
         </div>

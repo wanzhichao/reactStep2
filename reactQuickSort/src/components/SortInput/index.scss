@@ -5,11 +5,14 @@
   border: 1px solid #d9d9d9;
   border-radius: 4px;
   box-sizing: border-box;
+  padding-right:102px;
 }
 .sort-input{
   width: 80%;
   color: rgba(0, 0, 0, 0.65);
   text-indent: 8px;
+  margin-top: 25px;
+  transform: translate3d(0, -50%, 0);
 }
 .sort-btn{
   width: 100px;
